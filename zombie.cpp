@@ -26,6 +26,7 @@ int main()
 
 	Player player;
 
+
 	IntRect arena;
 
 	while (window.isOpen())
@@ -195,6 +196,7 @@ int main()
 		{
 		}
 
+		// window.draw(player.getSprite());
 		window.display();
 
 	}
