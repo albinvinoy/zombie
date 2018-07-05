@@ -7,7 +7,6 @@ class Player{
     public:
 
         Player();
-
         void spawn(IntRect arena, Vector2f resolution, int tileSize);
 
         void resetPlayerStats();
@@ -41,6 +40,8 @@ class Player{
     private:
         const float START_SPEED = 200;
         const float START_HEALTH = 100;
+        Vector2f _position;
+
         Sprite _sprite;
         Texture _texture;
         Vector2f _resolution;
