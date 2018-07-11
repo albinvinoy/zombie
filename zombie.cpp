@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Player.h"
+#include <iostream>
 
 using namespace sf;
 
@@ -182,6 +183,7 @@ int main()
 
 			// Draw the player
 			window.draw(player.getSprite());
+			std::cout << "Player Playing 185 " << std::endl;
 		}
 
 		if (state == State::LEVELING_UP)
@@ -196,7 +198,7 @@ int main()
 		{
 		}
 
-		// window.draw(player.getSprite());
+		 window.draw(player.getSprite());
 		window.display();
 
 	}
